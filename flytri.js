@@ -27,3 +27,7 @@ if (discordJSVersion.slice(0, 2) !== '13')
 
 
 module.exports.delay = require("./src/delay")
+
+module.exports.passGen = require("./src/passGen")
+
+console.log(this.passGen(null))
