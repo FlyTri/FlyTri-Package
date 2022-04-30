@@ -1,11 +1,11 @@
 {
 	"name": "flytri",
-	"version": "5.0.6",
+	"version": "5.0.7",
 	"description": "A Simple, Easy and Beginner friendly Discord.js Package for everyone. Uses Discord.js v13",
 	"main": "flytri.js",
 	"typings": "index.d.ts",
 	"scripts": {
-		"test": "turbo run test"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
 		"discord",
