@@ -20,14 +20,29 @@ class Wikipedia {
         this.language = options.language
     }
     async fetch() {
-        let wiki = await fetch(`https://${this.language}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(this.query)}`)
-            .catch(() => {
-                if(this.message) this.message.reply("❌ No result. Try again with another language!");
+        try {
+            let wiki = await fetch(`https://${this.language}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(this.query)}`)
+        } catch (e) {
+            message.channel.send({
+                embeds: [
+                    new Discord.MessageEmbed()
+                        .setTitle(`❌ Oops, something went wrong!`)
+                        .setColor("RANDOM")
+                        .setTimestamp()
+                        .setDescription(`\`\`\`${e}\`\`\``)
+                        .setFooter({
+                            text: `Requested by ${this.message.author.username}`,
+                            iconURL: this.message.author.displayAvatarURL()
+                        })
+                ]
             })
+            console.log(error)
+            return
+        }
 
         if (wiki.data.type === "disambiguation") {
             try {
-                if(this.message) this.message.channel.send({
+                if (this.message) this.message.channel.send({
                     embeds: [
                         new Discord.MessageEmbed()
                             .setTitle(`${wiki.data.title}`)
@@ -42,11 +57,11 @@ class Wikipedia {
                     ]
                 })
             } catch {
-                if(this.message) this.message.reply("❌ No result. Try again with another language!")
+                if (this.message) this.message.reply("❌ No result. Try again with another language!")
             }
         } else {
             try {
-                if(this.message) this.message.channel.send({
+                if (this.message) this.message.channel.send({
                     embeds: [
                         new Discord.MessageEmbed()
                             .setTitle(`${wiki.data.title}`)
@@ -62,7 +77,7 @@ class Wikipedia {
                     ]
                 })
             } catch {
-                if(this.message) this.message.reply("❌ No result. Try again with another language!")
+                if (this.message) this.message.reply("❌ No result. Try again with another language!")
             }
         }
     }
