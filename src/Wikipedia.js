@@ -36,8 +36,7 @@ class Wikipedia {
                         })
                 ]
             })
-            console.log(e)
-            return
+            throw new ReferenceError(e)
         }
 
         if (wiki.data.type === "disambiguation") {
