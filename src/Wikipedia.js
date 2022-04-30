@@ -36,8 +36,7 @@ class Wikipedia {
                         })
                 ]
             })
-            console.log(e)
-            return
+            throw new Exception("AxiosError")
         }
 
         if (wiki.data.type === "disambiguation") {
