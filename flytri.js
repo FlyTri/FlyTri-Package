@@ -25,4 +25,5 @@ if (discordJSVersion.slice(0, 2) !== '13')
 		`Discord.JS version 13 is required, but you are using ${discordJSVersion}. See https://www.npmjs.com/package/discord.js`
 	)
 
+
 module.exports.delay = require("./src/delay")
