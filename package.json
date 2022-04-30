@@ -1,6 +1,6 @@
 {
 	"name": "flytri",
-	"version": "5.0.8",
+	"version": "5.0.9",
 	"description": "A Simple, Easy and Beginner friendly Discord.js Package for everyone. Uses Discord.js v13",
 	"main": "flytri.js",
 	"typings": "index.d.ts",
@@ -20,6 +20,7 @@
 		"url": "https://github.com/VoMinhTri2010/FlyTri-Package"
 	},
 	"dependencies": {
+		"axios": "^0.27.2",
 		"discord.js": "^13.6.0",
 		"node-fetch": "^3.2.4"
 	}
