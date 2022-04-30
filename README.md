@@ -16,12 +16,6 @@
 </p>
 </div>
 
-
-
-
-
-  
-
 ## 📥 || Installation
 
 To install FlyTri package you need:
