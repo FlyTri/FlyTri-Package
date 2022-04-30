@@ -8,7 +8,7 @@
 <p>A Simple, Easy and Beginner friendly Discord.js Package for everyone. Uses Discord.js v13</p>
 <p>
     <a href="https://npmjs.com/package/flytri"><img src="https://img.shields.io/npm/v/flytri?maxAge=3600" alt="NPM version" /></a>
-    <a href="https://npmjs.com/package/flytri"><img src="https://img.shields.io/npm/dt/flytrimaxAge=3600" alt="NPM downloads" /></a>
+    <a href="https://npmjs.com/package/flytri"><img src="https://img.shields.io/npm/dt/flytri?maxAge=3600" alt="NPM downloads" /></a>
   </p>
   <p>
 <a  href="https://nodei.co/npm/flytri/"><img  src="https://nodei.co/npm/flytri.png?downloads=true&stars=true"  alt="NPM info"  /></a>
