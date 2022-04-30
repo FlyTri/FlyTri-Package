@@ -31,3 +31,6 @@ require("./src/checkUpdate")()
 module.exports.delay = require("./src/delay")
 
 module.exports.passGen = require("./src/passGen")
+
+//Class
+module.exports.Wikipedia = require("./src/Wikipedia")
