@@ -23,7 +23,7 @@ class Wikipedia {
         try {
             let wiki = await fetch(`https://${this.language}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(this.query)}`)
         } catch (e) {
-            message.channel.send({
+            if (this.message) this.message.channel.send({
                 embeds: [
                     new Discord.MessageEmbed()
                         .setTitle(`❌ Oops, something went wrong!`)
