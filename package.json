@@ -1,0 +1,25 @@
+{
+	"name": "flytri",
+	"version": "5.0.0",
+	"description": "A Simple, Easy and Beginner friendly Discord.js Package for everyone. Uses Discord.js v13",
+	"main": "flytri.js",
+	"typings": "index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"discord",
+		"discord.js",
+        "discord.js-v13",
+		"flytri"
+	],
+	"author": "Minh Trí",
+	"license": "Unlicense",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/VoMinhTri2010/FlyTri-Package"
+	},
+	"dependencies": {
+		"discord.js": "^13.6.0"
+	}
+}
