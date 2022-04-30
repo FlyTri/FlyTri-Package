@@ -37,8 +37,8 @@ $ npm install flytri
 ```
 
 
-## ⎝🔶⎠ Contact us
+## ❓ || Contact us
 
 In case you have idea's to improve the package, or maybe you found some bugs or you need help, you can contact us from our discord server!
 
-<a  href="https://www.discord.gg/Qk6j2fpeat"><img  src="https://www.discord.com/api/guilds/716216764769239083/widget.png?style=banner1"></a>
+<a  href="https://www.discord.gg/tgDVBKqvZet"><img  src="https://www.discord.com/api/guilds/911275816355258371/widget.png?style=banner1"></a>
