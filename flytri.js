@@ -25,7 +25,10 @@ if (discordJSVersion.slice(0, 2) !== '13')
 		`Discord.JS version 13 is required, but you are using ${discordJSVersion}. See https://www.npmjs.com/package/discord.js`
 	)
 
-
+//Function
 module.exports.delay = require("./src/delay")
 
 module.exports.passGen = require("./src/passGen")
+
+//Classes
+module.exports.Wikipedia = require("./classes/Wikipedia")
