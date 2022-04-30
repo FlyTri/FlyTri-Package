@@ -18,7 +18,7 @@ class Wikipeida {
         this.language = options.language
     }
     async() {
-        let wiki = await fetch(`https://${this.language}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(this.query)}`)
+        let wiki = fetch(`https://${this.language}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(this.query)}`)
             .catch(() => {
                 message.reply("❌ No result. Try again with another language!");
             })
