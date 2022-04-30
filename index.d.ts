@@ -14,11 +14,6 @@ import {
 	GuildMember
 } from 'discord.js'
 
-export declare function tictactoe(
+export declare function delay(
 	message: Message,
-	options?: tictactoeOptions
-): Promise<any>
-export declare function tictactoe(
-	interaction: CommandInteraction,
-	options?: tictactoeOptions
 ): Promise<any>
