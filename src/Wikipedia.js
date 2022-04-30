@@ -36,7 +36,7 @@ class Wikipedia {
                         })
                 ]
             })
-            console.log(error)
+            console.log(e)
             return
         }
 
