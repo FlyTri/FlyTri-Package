@@ -1,11 +1,11 @@
 <div  align="center">
-<h1>flytri</h1>
+<h1>FlyTri</h1>
 </div>
 
 ### ℹ️ || About 
 
 <div align="center">
-<p>flytri a unique package that gives you multiple useful usages using functions and events.</p>
+<p>A Simple, Easy and Beginner friendly Discord.js Package for everyone. Uses Discord.js v13</p>
 <p>
     <a href="https://npmjs.com/package/flytri"><img src="https://img.shields.io/npm/v/flytri?maxAge=3600" alt="NPM version" /></a>
     <a href="https://npmjs.com/package/flytri"><img src="https://img.shields.io/npm/dt/flytrimaxAge=3600" alt="NPM downloads" /></a>
