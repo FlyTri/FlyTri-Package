@@ -20,8 +20,10 @@ class Wikipedia {
         this.language = options.language
     }
     async fetch() {
+        let wiki;
+
         try {
-            let wiki = await fetch(`https://${this.language}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(this.query)}`)
+            wiki = await fetch(`https://${this.language}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(this.query)}`)
         } catch (e) {
             if (this.message) this.message.channel.send({
                 embeds: [
