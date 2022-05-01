@@ -73,7 +73,7 @@ class NPMinfo {
                 > Keywords: **${npm.data.keywords && npm.data.keywords.length ? npm.data.keywords.join(", ") : "None"}**
                 > License: **${npm.data.license || "None"}**
                 > Modified: **${moment(npm.data.time.modified).format("DD/MM/YYYY HH:MM:SS")}**
-                > Latest Version: **${version}**
+                > Latest Version: **${npm.data["dist-tags"].latest}**
                 > Dependencies: **${deps && deps.length ? deps.join(", ") : "None"}**
                 > Publish Size: **${getBytes(size.data.publishSize)}**
                 > Install Size: **${getBytes(size.data.installSize)}**
