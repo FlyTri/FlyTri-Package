@@ -1,4 +1,4 @@
-const Discord = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 const fetch = require("axios")
 const moment = require("moment")
 
@@ -63,7 +63,7 @@ class NPMinfo {
 
         if (this.message) this.message.channel.send({
             embeds: [
-                new Discord.MessageEmbed()
+                new MessageEmbed()
                     .setTitle("📦 NPM Package Info")
                     .setColor(this.color)
                     .setDescription(npm.data.description || "No description!")
@@ -72,7 +72,7 @@ class NPMinfo {
                 > HomePage: **${npm.data.homepage || "None"}**
                 > Keywords: **${npm.data.keywords && npm.data.keywords.length ? npm.data.keywords.join(", ") : "None"}**
                 > License: **${npm.data.license || "None"}**
-                > Modified: **${moment(npm.data.time.modified).format("DD/MM/YY HH:MM:SS")}**
+                > Modified: **${moment(npm.data.time.modified).format("DD/MM/YYYY HH:MM:SS")}**
                 > Dependencies: **${deps && deps.length ? deps.join(", ") : "None"}**
                 > Publish Size: **${getBytes(size.data.publishSize)}**
                 > Install Size: **${getBytes(size.data.installSize)}**
