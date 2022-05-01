@@ -29,16 +29,17 @@ class NPMinfo {
     }
     async fetch() {
         let npm;
+        let size
 
         try {
             npm = await fetch(`https://registry.npmjs.com/${this.name}`)
+            size = await fetch(`https://packagephobia.now.sh/api.json?p=${encodeURIComponent(this.name)}`)
         } catch {
             if (this.message) this.message.reply("No result found!")
             return
         }
 
         let version = npm.data.versions[npm.data["dist-tags"].latest];
-
         let deps = version.dependencies ? Object.keys(version.dependencies) : null;
         let maintainers = npm.data.maintainers.map((user) => user.name);
 
@@ -53,6 +54,13 @@ class NPMinfo {
             deps = deps.slice(0, 10);
             deps.push(`...${len} more.`);
         }
+
+        const suffixes = ["Bytes", "KB", "MB", "GB"]
+        function getBytes(bytes) {
+        let i = Math.floor(Math.log(bytes) / Math.log(1024));
+        return (!bytes && "0 Bytes") || `${(bytes / Math.pow(1024, i)).toFixed(2)} ${suffixes[i]}`;
+        }
+        console.log(getBytes)
 
         if (this.message) this.message.channel.send({
             embeds: [
