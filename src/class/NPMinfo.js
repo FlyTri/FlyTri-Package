@@ -56,7 +56,7 @@ class NPMinfo {
             embeds: [
                 new Discord.MessageEmbed()
                     .setTitle("NPM Package Info")
-                    .setColor("RANDOM")
+                    .setColor(this.color)
                     .setDescription(npm.data.description || "No description!")
                     .addField("General", `
                 > Package Name: **${npm.data.name}**
