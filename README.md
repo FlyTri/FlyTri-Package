@@ -34,11 +34,11 @@ $ npm install flytri
 
 ### Functions:
 
--  [`delay()`](https://www.npmjs.com/package/ultrax#sleep) - Functions that creates timeout easily and fast.
+-  [`delay()`](https://www.npmjs.com/package/flytri#sleep) - Functions that creates timeout easily and fast.
 
--  [`passGen()`](https://www.npmjs.com/package/ultrax#passgen) - Function to create passwords made by letters and numbers randomly with specified length.
+-  [`passGen()`](https://www.npmjs.com/package/flytri#passgen) - Function to create passwords made by letters and numbers randomly with specified length.
 
--  [`Wikipedia()`](https://www.npmjs.com/package/ultrax#wikipedia) - Function that allows users to search wikipedia and return results for a query.
+-  [`Wikipedia()`](https://www.npmjs.com/package/flytri#wikipedia) - Function that allows users to search wikipedia and return results for a query.
 
 # || Functions:
 
