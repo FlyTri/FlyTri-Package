@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const fetch = require("axios")
+const moment = require("moment")
 
 try {
     require.resolve("discord.js")
@@ -11,6 +12,12 @@ try {
     require.resolve("axios")
 } catch (e) {
     throw new Error("Cannot find module 'axios' Please do 'npm i axios'")
+}
+
+try {
+    require.resolve("moment")
+} catch (e) {
+    throw new Error("Cannot find module 'moment' Please do 'npm i moment'")
 }
 
 class Wikipedia {
