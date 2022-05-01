@@ -64,7 +64,7 @@ class NPMinfo {
         if (this.message) this.message.channel.send({
             embeds: [
                 new Discord.MessageEmbed()
-                    .setTitle("NPM Package Info")
+                    .setTitle("📦 NPM Package Info")
                     .setColor(this.color)
                     .setDescription(npm.data.description || "No description!")
                     .addField("General", `

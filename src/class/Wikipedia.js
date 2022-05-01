@@ -63,7 +63,7 @@ class Wikipedia {
                 if (this.message) this.message.channel.send({
                     embeds: [
                         new Discord.MessageEmbed()
-                            .setTitle(`${wiki.data.title}`)
+                            .setTitle(`🌎 ${wiki.data.title}`)
                             .setColor(this.color)
                             .setURL(`${wiki.data.content_urls.desktop.page}`)
                             .setThumbnail(`${wiki.data.thumbnail.source}`)
