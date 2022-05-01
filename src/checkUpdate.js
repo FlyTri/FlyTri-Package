@@ -1,7 +1,7 @@
 async function checkUpdate() {
     try {
         require.resolve("axios")
-    } catch (e) {
+    } catch {
         return;
     }
     const packageData = await require('axios')(`https://registry.npmjs.com/flytri`)

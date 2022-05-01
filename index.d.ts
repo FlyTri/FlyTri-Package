@@ -14,12 +14,19 @@ import {
 	GuildMember
 } from 'discord.js'
 
+export declare function colorInfo(
+	message: Message,
+): Promise<any>
+
 export declare function delay(
 	message: Message,
 ): Promise<any>
 
 export declare function passGen(
 	message: Message,
+): Promise<any>
+
+export declare function randomColor(
 ): Promise<any>
 
 export class Wikipedia {

@@ -1,4 +1,6 @@
 async function passGen(Length = []) {
+    if (!length) return undefined
+    
     var length = Length,
         res = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
             value = "";

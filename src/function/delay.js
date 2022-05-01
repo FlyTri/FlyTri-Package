@@ -1,4 +1,6 @@
-async function delay(ms = []) {
+async function delay(ms) {
+    if (!ms) return undefined
+    
     return new Promise((resolve) => setTimeout(resolve, ms));
 };
 

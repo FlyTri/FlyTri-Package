@@ -28,9 +28,13 @@ if (discordJSVersion.slice(0, 2) !== '13')
 require("./src/checkUpdate")()
 
 //Function
+module.exports.colorInfo = require("./src/function/colorInfo")
+
 module.exports.delay = require("./src/function/delay")
 
 module.exports.passGen = require("./src/function/passGen")
+
+module.exports.randomColor = require("./src/function/randomColor")
 
 //Class
 module.exports.Wikipedia = require("./src/class/Wikipedia")

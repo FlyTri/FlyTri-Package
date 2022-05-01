@@ -4,13 +4,13 @@ const moment = require("moment")
 
 try {
     require.resolve("discord.js")
-} catch (e) {
+} catch {
     throw new Error("Cannot find module 'discord.js' Please do 'npm i discord.js'")
 }
 
 try {
     require.resolve("axios")
-} catch (e) {
+} catch {
     throw new Error("Cannot find module 'axios' Please do 'npm i axios'")
 }
 
