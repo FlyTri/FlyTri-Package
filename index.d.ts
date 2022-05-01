@@ -18,6 +18,10 @@ export declare function delay(
 	message: Message,
 ): Promise<any>
 
+export declare function ms(
+	message: Message,
+): Promise<any>
+
 export declare function passGen(
 	message: Message,
 ): Promise<any>

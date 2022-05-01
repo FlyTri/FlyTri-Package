@@ -30,6 +30,8 @@ require("./src/checkUpdate")()
 //Function
 module.exports.delay = require("./src/function/delay")
 
+module.exports.ms = require("./src/function/ms")
+
 module.exports.passGen = require("./src/function/passGen")
 
 //Class
