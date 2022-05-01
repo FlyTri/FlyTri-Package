@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const fetch = require("axios")
+const moment = require("moment")
 
 try {
     require.resolve("discord.js")
