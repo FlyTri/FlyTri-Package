@@ -62,9 +62,9 @@ class NPMinfo {
                     .setDescription(npm.data.description || "No description!")
                     .addField("General", `
                 > Package Name: **${npm.data.name}**
-                > HomePage: **${npm.data.homepage}**
+                > HomePage: **${npm.data.homepage || "None"}**
                 > Keywords: **${npm.data.keywords && npm.data.keywords.length ? npm.data.keywords.join(", ") : "None"}**
-                > License: **${npm.data.license || "Unknown"}**
+                > License: **${npm.data.license || "None"}**
                 > Modified: **${moment(npm.data.time.modified).format("DD/MM/YY HH:MM:SS")}**
                 > Dependencies: **${deps && deps.length ? deps.join(", ") : "None"}**
                 `)
