@@ -16,12 +16,6 @@
 </p>
 </div>
 
-
-
-
-
-  
-
 ## 📥 || Installation
 
 To install FlyTri package you need:
@@ -36,6 +30,60 @@ Then you can open your application's terminal and type:
 $ npm install flytri
 ```
 
+## 📜 || Table of content
+
+### Functions:
+
+-  [`delay()`](https://www.npmjs.com/package/ultrax#sleep) - Functions that creates timeout easily and fast.
+
+-  [`passGen()`](https://www.npmjs.com/package/ultrax#passgen) - Function to create passwords made by letters and numbers randomly with specified length.
+
+-  [`Wikipedia()`](https://www.npmjs.com/package/ultrax#wikipedia) - Function that allows users to search wikipedia and return results for a query.
+
+# || Functions:
+
+## delay
+
+Sleep is a simple function, where is make it easier and faster to make a timeout in your code.
+
+**Example:**
+```js
+// Defining the package
+const flytri = require('flytri')
+
+// Getting the sleep function from the package
+const sleep = flytri.sleep
+
+// this will log "Start!" once i run the application
+console.log('Start!')
+
+// using the package sleep function to set a timeout
+sleep(5000) // sleep(milliseconds)
+
+// after the 5 seconds (5000 milliseconds) it will log "5 Seconds passed"
+console.log('5 Seconds passed')
+```
+
+> sleep(ms: Number)
+
+## passGen
+
+this is a simple function that can generate passwords using letters and numbers and the password length is custom so you can change it to any length you want!
+
+
+**Example:**
+
+```js
+// Defining the package
+const  ultrax = require('ultrax')
+
+// getting the passGen function from the package
+const  passGen = ultrax.passGen
+
+// passGen(6) that mean it will generate a password from 6 characters.
+console.log(passGen(6)) 
+```
+> passGen(Length: Number)
 
 ## ❓ || Contact us
 

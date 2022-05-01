@@ -1,6 +1,17 @@
 const Discord = require("discord.js")
 const fetch = require("axios")
 
+try {
+    require.resolve("discord.js")
+} catch (e) {
+    throw new Error("Cannot find module 'discord.js' Please do 'npm i discord.js'")
+}
+
+try {
+    require.resolve("axios")
+} catch (e) {
+    throw new Error("Cannot find module 'axios' Please do 'npm i axios'")
+}
 
 class Wikipedia {
 
