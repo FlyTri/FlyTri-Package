@@ -58,9 +58,8 @@ async function ms() {
                 return undefined;
         }
     }
-
-    module.exports = function (val) {
-        if (val.length > 0) return parse(val);
-        throw new Error('val is not a non-empty string. val=' + JSON.stringify(val));
-    }
+}
+module.exports = function (val) {
+    if (val.length > 0) return parse(val);
+    throw new Error('val is not a non-empty string. val=' + JSON.stringify(val));
 }
