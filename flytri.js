@@ -34,3 +34,5 @@ module.exports.passGen = require("./src/function/passGen")
 
 //Class
 module.exports.Wikipedia = require("./src/class/Wikipedia")
+
+module.exports.NPMinfo = require("./src/class/NPMinfo")

@@ -26,3 +26,8 @@ export class Wikipedia {
 	constructor(options: WikipediaOptions);
 	public fetch(): Promise<void>;
 }
+
+export class NPMinfo {
+	constructor(options: WikipediaOptions);
+	public fetch(): Promise<void>;
+}
