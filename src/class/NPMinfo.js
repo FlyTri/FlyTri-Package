@@ -60,7 +60,6 @@ class NPMinfo {
         let i = Math.floor(Math.log(bytes) / Math.log(1024));
         return (!bytes && "0 Bytes") || `${(bytes / Math.pow(1024, i)).toFixed(2)} ${suffixes[i]}`;
         }
-        console.log(getBytes)
 
         if (this.message) this.message.channel.send({
             embeds: [
@@ -75,6 +74,8 @@ class NPMinfo {
                 > License: **${npm.data.license || "None"}**
                 > Modified: **${moment(npm.data.time.modified).format("DD/MM/YY HH:MM:SS")}**
                 > Dependencies: **${deps && deps.length ? deps.join(", ") : "None"}**
+                > Publish Size: **${getBytes(publishSize)}**
+                > Install Size: **${getBytes(installSize)}**
                 `)
                     .setFooter({
                         text: `Requested by ${this.message.author.username}`,
