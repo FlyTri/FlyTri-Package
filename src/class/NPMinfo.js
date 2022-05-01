@@ -37,10 +37,11 @@ class NPMinfo {
             return
         }
 
-        const version = npm.data.versions[npm.data["dist-tags"].latest];
+        let version = npm.data.versions[npm.data["dist-tags"].latest];
 
         let deps = version.dependencies ? Object.keys(version.dependencies) : null;
         let maintainers = npm.data.maintainers.map((user) => user.name);
+        let keywords = npm.data.keywords.join(", ")
 
         if (maintainers.length > 10) {
             const len = maintainers.length - 10;
@@ -54,6 +55,10 @@ class NPMinfo {
             deps.push(`...${len} more.`);
         }
 
+        if (npm.data.keywords.includes(",")) {
+            keywords = npm.data.keywords
+        }
+
         if (this.message) this.message.channel.send({
             embeds: [
                 new Discord.MessageEmbed()
@@ -63,7 +68,7 @@ class NPMinfo {
                     .addField("General", `
                 > Package Name: **${npm.data.name}**
                 > HomePage: **${npm.data.homepage}**
-                > Keywords: **${npm.data.keywords.join(", ") || "None"}**
+                > Keywords: **${keywords || "None"}**
                 > License: **${npm.data.license}**
                 > Modified: **${moment(npm.data.time.modified).format("DD/MM/YY HH:MM:SS")}**
                 > Dependencies: **${deps && deps.length ? deps.join(", ") : "None"}**
