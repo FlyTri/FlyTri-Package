@@ -75,10 +75,10 @@ this is a simple function that can generate passwords using letters and numbers 
 
 ```js
 // Defining the package
-const ultrax = require("ultrax");
+const flytri = require("flytri");
 
 // getting the passGen function from the package
-const passGen = ultrax.passGen;
+const passGen = flytri.passGen;
 
 // passGen(6) that mean it will generate a password from 6 characters.
 console.log(passGen(6));
