@@ -29,7 +29,7 @@ class NPMinfo {
     }
     async fetch() {
         let npm;
-        let size
+        let size;
 
         try {
             npm = await fetch(`https://registry.npmjs.com/${this.name}`)
@@ -74,8 +74,8 @@ class NPMinfo {
                 > License: **${npm.data.license || "None"}**
                 > Modified: **${moment(npm.data.time.modified).format("DD/MM/YY HH:MM:SS")}**
                 > Dependencies: **${deps && deps.length ? deps.join(", ") : "None"}**
-                > Publish Size: **${getBytes(publishSize)}**
-                > Install Size: **${getBytes(installSize)}**
+                > Publish Size: **${getBytes(size.data.publishSize)}**
+                > Install Size: **${getBytes(size.data.installSize)}**
                 `)
                     .setFooter({
                         text: `Requested by ${this.message.author.username}`,
