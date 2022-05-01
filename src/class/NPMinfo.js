@@ -56,7 +56,7 @@ class NPMinfo {
         }
 
         if (npm.data.keywords.includes(",")) {
-            keywords = npm.data.keywords
+            keywords = npm.data.keywords.join(", ")
         }
 
         if (this.message) this.message.channel.send({
