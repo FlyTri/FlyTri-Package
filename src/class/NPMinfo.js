@@ -32,8 +32,9 @@ class NPMinfo {
 
         try {
             npm = await fetch(`https://registry.npmjs.com/${this.name}`)
-        } catch (e) {
+        } catch {
             if (this.message) this.message.reply("No result found!")
+            return
         }
 
         const version = npm.data.versions[npm.data["dist-tags"].latest];
@@ -69,11 +70,12 @@ class NPMinfo {
                 `)
                     .setFooter({
                         text: `Requested by ${this.message.author.username}`,
-                        iconURL: this.message.author.displayAvatarURL()})
+                        iconURL: this.message.author.displayAvatarURL()
+                    })
             ]
-    })
+        })
 
-}
+    }
 }
 
 module.exports = NPMinfo

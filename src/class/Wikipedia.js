@@ -55,7 +55,7 @@ class Wikipedia {
                         })
                 ]
             })
-            throw new ReferenceError(e)
+            throw new Error(e)
         }
 
         if (wiki.data.type === "disambiguation") {

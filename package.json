@@ -1,6 +1,6 @@
 {
 	"name": "flytri",
-	"version": "6.3.2",
+	"version": "6.3.3",
 	"description": "A Simple, Easy and Beginner friendly Discord.js Package for everyone. Uses Discord.js v13",
 	"main": "flytri.js",
 	"typings": "index.d.ts",
