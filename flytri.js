@@ -28,9 +28,9 @@ if (discordJSVersion.slice(0, 2) !== '13')
 require("./src/checkUpdate")()
 
 //Function
-module.exports.delay = require("./src/delay")
+module.exports.delay = require("./src/function/delay")
 
-module.exports.passGen = require("./src/passGen")
+module.exports.passGen = require("./src/function/passGen")
 
 //Class
-module.exports.Wikipedia = require("./src/Wikipedia")
+module.exports.Wikipedia = require("./src/class/Wikipedia")

@@ -21,9 +21,8 @@ class Wikipedia {
         if (!options.query) throw new TypeError('Missing arugment query in wikipedia function.')
         if (typeof options.query !== 'string') throw new TypeError('query must be a string in wikipedia function.')
         if (!options.language) throw new TypeError('Missing arugment language in wikipedia function.')
-        if (typeof options.query !== 'string') throw new TypeError('Language must be a string in wikipedia function.')
+        if (typeof options.language !== 'string') throw new TypeError('Language must be a string in wikipedia function.')
         if (!options.message) throw new TypeError('Missing arugment \'message\' in wikipedia function.')
-        if (options.message && options.interaction) throw new TypeError('Exceeded arugment, you cannot have \'message\' at the same time in wikipedia function.')
 
         this.message = options.message
         this.color = options.color
